@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STEP | User-profile</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- <link rel="stylesheet" href="/general/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="/general/css/general-style.css">
+    <link rel="stylesheet" href="/css/user-profile-style.css">
+    
+</head>
+<body>
+<!-- i timilehin founder of step, officially declare this work open -->
+    <div class="info" id="info"><!-- notifications come in here--></div>
+    <nav id="nav">
+
+    </nav>
+    <div class="mini-nav" id="mini-nav"></div>
+    <div class="to-top" id="scrollup" onclick="scrollup()">
+        <span>&#8248;</span>
+    </div>
+
+    <div class="container">
+        <div class="user-profile-top">
+            <div class="user-profile-background-img">
+                <img src="/products/man1.jpg" alt="">
+                <img src="/products/woman1.jpg" alt="">
+                <img src="/products/man2.jpg" alt="">
+                
+            </div>
+            <div class="user-profile-back-style"></div>
+            <div class="user-profile-profile-div">
+                <div class="user-profile-profile-img">
+                    <img src="/products/women.jpg" alt="">
+                </div>
+                <div class="user-profile-profile-name">
+                    <div class="b">Billy brarna7 Lorem, ipsum dolor.</div>
+                </div>
+                <div class="user-profile-profile-niche">
+                    <div class="">Fashion & Art</div>
+                </div>
+
+                <div class="user-profile-btn">
+                    <span class="follow">Follow</span>
+                    <span class="message">Message</span>
+                </div>
+
+                <div class="user-profile-profile-status">
+                    <div class=""> 
+                        <span>Level</span>
+                        <span class="b">5</span>
+                    </div>
+                    <div class=""> 
+                        <span>Downlines</span>
+                        <span class="b">10K</span>
+                    </div>
+                    <div class=""> 
+                        <span>Following</span>
+                        <span class="b">1K</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sections">
+            <span class="marker"></span>
+            <p onclick="showsection(1)" id="rowsection1" class="showsection b">Step (1K)</p>
+            <p onclick="showsection(2)" id="rowsection2" class="showsection b">Top steps</p>
+            <p onclick="showsection(3)" id="rowsection3" class="showsection b">About</p>
+        </div>
+
+        <div class="steps-section" id="steps-section1">
+            <div class="scroll scroll-div">
+                <div><div class="">
+                    <img src="/products/man1.jpg" alt="">
+                    <span>Shoes</span>
+                </div></div>
+                <div><div class="">
+                    <img src="/products/man4.jpg" alt="">
+                    <span>Clothes</span>
+                </div></div>
+               <div> <div class="">
+                    <img src="/products/room.jpg" alt="">
+                    <span>Decor</span>
+                </div></div>
+               <div> <div class="">
+                    <img src="/products/prod_11.png" alt="">
+                    <span>Bags</span>
+                </div></div>
+               <div> <div class="">
+                    <img src="/products/man1.jpg" alt="">
+                    <span>Shoes</span>
+                </div></div>
+               <div> <div class="">
+                    <img src="/products/man1.jpg" alt="">
+                    <span>Shoes</span>
+                </div></div>
+                <div> <div class="">
+                    <img src="/products/man5.jpg" alt="">
+                    <span>Shoes</span>
+                </div></div>
+            </div>
+            <div class="step">
+                <div class=""></div>
+                <div class=""></div>
+                <div class=""></div>
+                <div class=""></div>
+                <div class=""></div>
+                <div class=""></div>
+                <div class=""></div>
+                <div class=""></div>
+                <div class=""></div>
+                <div class=""></div>
+                <div class=""></div>
+                <div class=""></div>
+                <!-- <hr> -->
+                <div class="">
+                    <img src="/products/man1.jpg" alt="">
+                </div>
+                <div class="">
+                    <img src="/products/woman1.jpg" alt="">
+                </div>
+                <div class="">
+                    <img src="/products/woman4.jpg" alt="">
+                </div>
+                <div class="">
+                    <img src="/products/man2.jpg" alt="">
+                </div>
+                <div class="">
+                    <img src="/products/woman2.jpg" alt="">
+                </div>
+                <div class="">
+                    <img src="/products/man3.jpg" alt="">
+                </div>
+                <div class="">
+                    <img src="/products/woman3.jpg" alt="">
+                </div>
+                <div class="">
+                    <img src="/products/man4.jpg" alt="">
+                </div>
+                <div class="">
+                    <img src="/products/woman4.jpg" alt="">
+                </div>
+                <div class="">
+                    <img src="/products/man5.jpg" alt="">
+                </div>
+                <div class="">
+                    <img src="/products/room.jpg" alt="">
+                </div>
+                <div class="">
+                    <img src="/products/man1.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="steps-section" id="steps-section2">
+            <div class="step">
+                <div class=""></div>
+                <div class=""></div>
+                <div class=""></div>
+                <div class=""></div>
+                <div class=""></div>
+                <div class=""></div>
+                <div class=""></div>
+                <div class=""></div>
+                <div class=""></div>
+                <div class=""></div>
+                <div class=""></div>
+                <div class=""></div>
+            </div>
+        </div>
+
+        <div class="steps-section" id="steps-section3">
+            hhy
+        </div>
+    </div>
+
+    <script>
+        function showsection(index) {
+            for (i = 1; i <= 3; i++) {
+                document.getElementById(`steps-section${i}`).style.display = " none";
+
+            }
+            document.getElementById(`steps-section${index}`).style.display = " block";
+        }
+
+        var marker = document.querySelector(".marker");
+        var item = document.querySelectorAll(".sections p");
+
+        function indicator(e){
+            marker.style.left = e.offsetLeft + "px";
+            marker.style.width = e.offsetWidth + "px";
+        }
+
+        // console.log(item)
+    indicator(item[0]);
+
+        item.forEach(link => {
+            link.addEventListener("click", function (e){
+                indicator(e.target);
+            });
+        });
+    </script>
+
+    <!-- script -->
+    <script src="/general/js/jquery-2.2.4.min.js"></script>
+    <script src="/general/js/bootstrap.min.js"></script>
+    <script src="/general/js/nav.js"></script>
+    <script src="/general/js/index.js"></script>
+
+    
+</body>
+</html>

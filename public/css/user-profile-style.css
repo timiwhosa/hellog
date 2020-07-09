@@ -1,0 +1,250 @@
+.container{
+    margin-top: 0;
+    overflow: hidden;
+}
+.user-profile-top{
+    width: 70vw;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.user-profile-background-img{
+    width: 100%;
+    height: 44vh;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.user-profile-background-img img{
+    width: 100%;
+    height: 100%;
+}
+.user-profile-back-style{
+    position: relative;
+    width: 104%;
+    height: 33vh;
+    background-color: white;
+    top: -20vh;
+    margin-bottom: -20vh;
+    margin: 0 auto;
+    clip-path: polygon(0 50%, 40% 25%, 60% 25%, 100% 0 , 100% 100%, 0 100% );
+}
+.user-profile-profile-div{
+    position: relative;
+    width: 100%;
+    top: -60vh;
+    margin-bottom: -60vh;
+    text-align: center;
+}
+.user-profile-profile-img{
+    text-align: center;
+    width: 13vw;
+    height: 13vw;
+    min-width: 102.391px;
+    min-height: 102.391px;
+    border-radius: 50%;
+    border: 1px solid var(--bsh);
+    margin: 0 auto;
+    overflow: hidden;
+}
+.user-profile-profile-img img{
+    height: 100%;
+    width: auto;
+    max-width:100%;
+}
+.user-profile-profile-name{
+    margin: 4vh 0;
+    font-size: 20px;
+}
+.user-profile-profile-niche{
+    font-size: 15px;
+}
+.user-profile-btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 4vh 0;
+}
+.user-profile-btn span{
+    margin: 0 2vw;
+    border-radius:100px ;
+    border: 1px solid #000;
+    padding: 10px 20px;
+    transition: all ease-in-out 500ms;
+    font-size: 17px;
+}
+.follow{
+    background-color: #000;
+    color: white;
+    cursor: pointer;
+}
+.follow:hover{
+    background-color:white ;
+    color: #000;
+}
+.message:hover{
+    background-color:#000000 ;
+    color: #ffffff;
+}
+.user-profile-profile-status{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 17px;
+}
+.user-profile-profile-status div span{
+    display: block;
+    padding: 5px;
+}
+.steps-section{
+    display: none;
+}
+#steps-section1{
+    display: block;
+}
+.step{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    margin: 0 10vw;
+    margin-top: 20px;
+}
+.step div{
+    width: 100%;
+    height: calc(90vw / 6) ;
+    min-height: 100px;
+    border: 1px solid var(--bsh);
+    overflow: hidden;
+    background-position: inherit;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.step div:nth-child(1){
+    background-image: url("/products/man1.jpg");
+    
+}.step div:nth-child(2){
+    background-image: url("/products/woman1.jpg");
+    
+}.step div:nth-child(3){
+    background-image: url("/products/man2.jpg");
+    
+}.step div:nth-child(4){
+    background-image: url("/products/woman2.jpg");
+    
+}.step div:nth-child(5){
+    background-image: url("/products/man3.jpg");
+    
+}.step div:nth-child(6){
+    background-image: url("/products/woman3.jpg");
+    
+}.step div:nth-child(7){
+    background-image: url("/products/man4.jpg");
+    
+}.step div:nth-child(8){
+    background-image: url("/products/woman4.jpg");
+    
+}.step div:nth-child(9){
+    background-image: url("/products/man5.jpg");
+    
+}.step div:nth-child(10){
+    background-image: url("/products/room.jpg");
+    
+}.step div:nth-child(11){
+    background-image: url("/products/woman3.jpg");
+    
+}.step div:nth-child(12){
+    background-image: url("/products/man1.jpg");
+    
+}
+/* .step div img{
+    height: 100%;
+} */
+
+.scroll-div{
+    position: sticky;
+    top: 95px;
+    margin: 10px 0;
+    background-color: #ffffff;
+    padding: 10px 0;
+}
+.scroll-div >div{
+    width: fit-content;
+    max-width: 100px;
+    border-radius: 100px;
+    height: 30px;
+    padding: 5px;
+    display: inline-block;
+    border: 1px solid var(--bsh);
+    line-height: 30px;
+    margin: 0 1vw;
+}
+.scroll-div > div:nth-child(1){
+    margin-left: 20vw;
+}
+.scroll-div > div:last-child{
+    margin-right: 20vw;
+}
+.scroll-div > div div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+.scroll-div > div div img{
+    width: 30px;
+    height: 100%;
+    border-radius: 50%;
+}
+.scroll-div > div div span{
+    margin-left: 5px;
+}
+
+@media screen and (max-width: 599px){
+    .step {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+}
+
+
+@media screen and (max-width: 480px){
+    .user-profile-top{
+        width: 100vw;
+    }
+    .user-profile-background-img{
+        height: 30vh;
+    }
+    .user-profile-back-style{
+        top: -17vh;
+        margin-bottom: -17vh;
+    }
+    .user-profile-profile-div{
+        top: -34vh;
+        margin-bottom: -34vh;
+    }
+    .user-profile-profile-name{
+        padding: 0 2vw;
+    }
+    .scroll-div >div{
+        height: 25px;
+        font-size: 13px;
+    }
+    .scroll-div >div:nth-child(1){
+        margin-left: 4vw;
+    }
+    .scroll-div >div:last-child{
+        margin-right: 4vw;
+    }
+    .scroll-div >div div img{
+        width: 25px;
+    }
+    .step{
+        grid-template-columns: repeat(auto-fit, minmax(30vw, 1fr));
+        /* margin: 0 4vw; */
+        /* ************COME BACK HERE AND DECIDE ON THE MARGIN LATER**************** */
+        margin: 0;
+    }
+    .step div{
+        height: 30vw;
+    }
+
+}
