@@ -25,7 +25,7 @@ body{
     padding: 0;
     width: 100vw;
     height: auto;
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/
 }
 body a{
     color: var(--color);
