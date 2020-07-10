@@ -1,6 +1,6 @@
 .container{
     margin-top: 0;
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 .user-profile-top{
     width: 70vw;
