@@ -78,14 +78,14 @@ mininav.innerHTML += navitem;
 var showminisidenav1 = 1;
 function showminisidenav(){
     if (showminisidenav1 === 1) {
-        document.getElementById("mini-sidenav").style.right = "2vw";
-        // document.getElementById("cover2").style.right = "0";
-        document.getElementById("cover2").style.left = "0";
+        document.getElementById("mini-sidenav").style.left = "calc(98vw - 160px)";
+        setTimeout(()=>{
+           document.getElementById("cover2").style.left = "0";
+        },500);
         showminisidenav1=2;
     }
     else if (showminisidenav1 === 2) {
-        document.getElementById("mini-sidenav").style.right = "-200vw";
-        // document.getElementById("cover2").style.right = "-200vw";
+        document.getElementById("mini-sidenav").style.left = "-200vw";
         document.getElementById("cover2").style.left = "-200vw";
         showminisidenav1 =1;
     }
