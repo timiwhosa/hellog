@@ -212,7 +212,7 @@ nav{
     color: white;
 }
 #mini-sidenav{
-    right: -200vw;
+    left: -200vw;
 }
 #cover, #cover2{
     left: -200vw;
